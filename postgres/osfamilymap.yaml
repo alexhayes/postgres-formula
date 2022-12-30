@@ -24,6 +24,7 @@ Debian:
     {% else %}
   pkg_dev: postgresql-server-dev-all
     {% endif %}
+  pkg_python: python3-psycopg2
 
 FreeBSD:
     {% if repo.version|float >= 9.6 %}
